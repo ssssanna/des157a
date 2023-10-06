@@ -1,4 +1,4 @@
-h1, h2, img, p, li, ul, a {
+h1, h2, p, li, ul, a {
     padding: 0;
     margin: 0; 
 }
@@ -9,6 +9,11 @@ ul li {
 
 a {
     text-decoration: none;
+    color: rgb(28, 27, 26); 
+}
+
+a:hover {
+    color: rgb(115, 109, 103); 
 }
 
 body {
@@ -30,6 +35,7 @@ body {
 header h1 {
     font-family: 'Carter One'; 
     font-size: 45px; 
+    color: rgb(28, 27, 26); 
     text-align: center; 
 
     position: absolute;
@@ -40,8 +46,63 @@ header h1 {
 header h2 {
     font-family: 'Carter One'; 
     font-size: 20px;
+    color: rgb(28, 27, 26); 
 
     position: absolute;
     left: 560px;
     top: 110px; 
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 190px; 
+    padding-top: 50px; 
+}
+
+#experiments {
+    margin-top: 5.2em; 
+}
+
+.content h2 {
+    font-family: 'Carter One';
+    font-size: 20px; 
+    color: rgb(77, 54, 29); 
+}
+
+.content ul li {
+    font-family: 'EB Garamond'; 
+    font-size: 18px; 
+    color: rgb(28, 27, 26);  
+    line-height: 1.8em; 
+    text-align: left;
+
+    border-left: solid;
+    border-color: rgb(51, 47, 7);
+    border-width: 1.5px;
+}
+
+.content ul li a {
+    padding-left: 15px; 
+}
+
+.content ul {
+    padding-top: 18px; 
+}
+
+footer {
+    border-top: solid;
+    border-color: orange;
+    border-width: 5px; 
+
+    margin-top: 8em; 
+}
+
+footer p {
+    font-family: 'EB Garamond'; 
+    font-weight: lighter;
+    text-align: right;
+    color: rgb(28, 27, 26); 
+
+    padding-top: 10px; 
 }
