@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 1 - Selections & Loops</title>
+</head>
+
+<body>
+    <h1>Experiment 1</h1>
+    <h2>Open this HTML file in a broswer -> Right click on the page -> Choose "Inspect" -> Click on the kebab menu to move the inspect window to the bottom of the page -> Click on "Console" to view console and functionality of the code.</h2>
+
+    <script>
+        /*This program uses a variable declaration, a for loop and if else statement to print out number 1-100 in the console. When the number is divisible by 3, the console prints out "Fizz" instead of the number. When the number is divisible by 5, "Buzz" is printed out instead of the number. When the number is divisible by both 3 and 5, "FizzBuzz" gets printed out instead of the number. */
+
+        var aNum;
+
+        for (aNum=1; aNum<101; aNum++){
+            if (aNum%3==0 && aNum%5==0){
+                console.log("FizzBuzz");
+            }
+            else if (aNum%3==0){
+                console.log("Fizz"); 
+            }
+            else if (aNum%5==0){
+                console.log("Buzz"); 
+            }
+            else {
+                console.log(aNum); 
+            }
+        }
+    </script>
+</body>
+</html>
