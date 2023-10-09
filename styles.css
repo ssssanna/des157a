@@ -1,5 +1,5 @@
-h1, h2, p, li, ul, a {
-    padding: 0;
+h1, h2, p, ul, li, a, div, footer {
+    padding: 0; 
     margin: 0; 
 }
 
@@ -17,92 +17,150 @@ a:hover {
 }
 
 body {
-    width: 1100px; 
-    margin: auto; 
-
     background-color: #F9F8F2; 
 }
 
 #banner {
-    background-image: url(./images/portal_banner.png); 
-    width: 1100px;
-    height: 250px; 
-    background-size:contain;
-
-    position: relative; 
+    background-image: url(./images/portal_banner_responsive.png); 
+    background-size: cover;
+    position: relative;
+    
+    height: 350px; 
 }
 
 header h1 {
     font-family: 'Carter One'; 
-    font-size: 45px; 
-    color: rgb(28, 27, 26); 
-    text-align: center; 
+    font-size: 40px; 
+    color: rgb(28, 27, 26);
+    line-height: 1.3em; 
 
-    position: absolute;
-    left: 190px; 
-    top: 35px; 
+    position: absolute; 
+    top: 30px;
+    left: 25px; 
 }
 
 header h2 {
     font-family: 'Carter One'; 
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(28, 27, 26); 
+    text-align: right; 
 
     position: absolute;
-    left: 560px;
-    top: 110px; 
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 190px; 
-    padding-top: 50px; 
-}
-
-#experiments {
-    margin-top: 5.2em; 
+    top: 160px;
+    right: 20px; 
 }
 
 .content h2 {
     font-family: 'Carter One';
     font-size: 20px; 
     color: rgb(77, 54, 29); 
+
+    text-align: center; 
 }
 
 .content ul li {
     font-family: 'EB Garamond'; 
     font-size: 18px; 
     color: rgb(28, 27, 26);  
-    line-height: 1.8em; 
+    line-height: 2em; 
     text-align: left;
 
     border-left: solid;
-    border-color: rgb(51, 47, 7);
+    border-color: #3a1a05;
     border-width: 1.5px;
 }
 
-.content ul li a {
+.content ul {
+    width: 280px; 
+    margin: auto; 
+
+    padding-top: 15px; 
+}
+
+.content ul li {
     padding-left: 15px; 
 }
 
-.content ul {
-    padding-top: 18px; 
+.sections {
+    margin-bottom: 40px; 
 }
 
 footer {
-    border-top: solid;
-    border-color: orange;
-    border-width: 5px; 
-
-    margin-top: 8em; 
+    background-image: url(./images/portal_footer.png); 
+    background-size: cover;
+    height: 140px; 
 }
 
-footer p {
+footer p, footer a {
     font-family: 'EB Garamond'; 
-    font-weight: lighter;
-    text-align: right;
-    color: rgb(28, 27, 26); 
+    text-align: center;
+    color: #F9F8F2; 
 
-    padding-top: 10px; 
+    padding-top: 100px; 
+}
+
+/* media query for desktop */
+@media only screen and (min-width: 600px) {
+    #banner {
+        background-image: url(./images/portal_banner.png); 
+        width: 1100px;
+        height: 250px; 
+        background-size: cover;
+        margin: auto; 
+    
+        position: relative; 
+    }
+
+    header h1 {
+        font-size: 45px; 
+        text-align: left; 
+    
+        position: absolute;
+        left: 160px; 
+        top: 20px; 
+    }
+
+    header h2 {
+        font-size: 20px;
+    
+        position: absolute;
+        right: 160px;
+        top: 95px; 
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        gap: 150px; 
+        padding-top: 30px;
+        
+        width: 1100px; 
+    }
+
+    .content ul {
+        width: 300px;  
+        margin: auto; 
+
+    }
+
+    .sections {
+        margin-bottom: 0; 
+    }
+
+    #experiments {
+        margin-top: 20px; 
+    }
+
+    footer {
+        width: 1100px; 
+        margin: auto; 
+        height: 155px; 
+
+        background-image: url(./images/portal_footer_desktop.png); 
+        padding: 20px; 
+    }
+
+    footer p, footer a {
+        padding: 0; 
+    }
 }
