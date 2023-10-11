@@ -157,7 +157,7 @@ footer p, footer a {
 
     img:hover {
         rotate: 360deg;
-        translate: 150px;
+        translate: 150px; 
     }
 
     header h2 {
@@ -228,7 +228,7 @@ footer p, footer a {
         }
     }
 
-    .content #experiments {
+    .content #ex {
         animation-name: colorChange3; 
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -312,8 +312,8 @@ footer p, footer a {
     }
 
     #foot {
-        background-image: url(./images/portal_footer.png);  
-        background-size: contain; 
+        background-image: url(./images/portal_footer_desktop.png);  
+        background-size: cover; 
         background-position: center bottom; 
         max-width: 1100px; 
     }
