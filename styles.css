@@ -101,6 +101,15 @@ footer p, footer a {
 
 /* media query for desktop */
 @media only screen and (min-width: 600px) {
+    body {
+        max-width: 1100px; 
+        margin: auto; 
+        min-height: 100%; 
+
+        
+    }
+    
+
     #banner {
         background-image: url(./images/portal_banner.png); 
         width: 1100px;
@@ -129,18 +138,13 @@ footer p, footer a {
     }
 
     .content {
+        margin: auto; 
+        padding-left: 110px; 
+
         display: flex;
         justify-content: center;
-        gap: 150px; 
+        gap: 100px; 
         padding-top: 30px;
-        
-        width: 1100px; 
-    }
-
-    .content ul {
-        width: 300px;  
-        margin: auto; 
-
     }
 
     .sections {
@@ -148,19 +152,18 @@ footer p, footer a {
     }
 
     #experiments {
-        margin-top: 20px; 
+        margin-top: 40px; 
     }
 
-    footer {
-        width: 1100px; 
-        margin: auto; 
-        height: 155px; 
-
+    #foot {
         background-image: url(./images/portal_footer_desktop.png); 
-        padding: 20px; 
+        background-size: contain; 
+        background-position: center bottom; 
+        max-width: 1100px; 
     }
 
-    footer p, footer a {
-        padding: 0; 
+    #foot p, #foot a {
+        letter-spacing: 1px;
     }
+
 }
