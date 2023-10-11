@@ -20,6 +20,10 @@ body {
     background-color: #F9F8F2; 
 }
 
+img {
+    opacity: 0; 
+}
+
 #banner {
     background-image: url(./images/portal_banner_responsive.png); 
     background-size: cover;
@@ -128,6 +132,7 @@ footer p, footer a {
     }
 
     img {
+        opacity: 1; 
         position: absolute;
         left: 580px; 
         top: 22px; 
@@ -173,6 +178,131 @@ footer p, footer a {
         padding-top: 30px;
     }
 
+    .content #studios {
+        animation-name: colorChange1; 
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+
+    @keyframes colorChange1 {
+        0% {
+            color: #e7693f; 
+        }
+        15% {
+            color: #d4b177; 
+        }
+        30% {
+            color: #DEE7E7; 
+        }
+        45% {
+            color: #ADC698; 
+        }
+        60% {
+            color: #247BA0; 
+        }
+    }
+
+    .content #experiments {
+        animation-name: colorChange2; 
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+
+    @keyframes colorChange2 {
+        0% {
+            color: #8c4831; 
+        }
+        25% {
+            color: #eb9b19; 
+        }
+        50% {
+            color: #739797; 
+        }
+        75% {
+            color: #9bc07d; 
+        }
+        90% {
+            color: #7ca9bc; 
+        }
+    }
+
+    .content #experiments {
+        animation-name: colorChange3; 
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+
+    @keyframes colorChange3 {
+        0% {
+            color: #57a2cd; 
+        }
+        15% {
+            color: #a4d277; 
+        }
+        30% {
+            color: #8e9fd1; 
+        }
+        45% {
+            color: #dc639b; 
+        }
+        60% {
+            color: #b5b967; 
+        }
+    }
+
+    .content #rd {
+        animation-name: colorChange4; 
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+
+    @keyframes colorChange4 {
+        0% {
+            color: #79afa2; 
+        }
+        10% {
+            color: #273c13; 
+        }
+        20% {
+            color: #b7c5ee; 
+        }
+        30% {
+            color: #907682; 
+        }
+        40% {
+            color: #7978cb; 
+        }
+    }
+
+    .content #final {
+        animation-name: colorChange5; 
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 20s;
+    }
+
+    @keyframes colorChange5 {
+        0% {
+            color: #cbc086; 
+        }
+        15% {
+            color: #5d64a1; 
+        }
+        30% {
+            color: #8b9e83; 
+        }
+        45% {
+            color: #8eb9d5; 
+        }
+        60% {
+            color: #de924c; 
+        }
+    }
+
     .sections {
         margin-bottom: 0; 
     }
@@ -182,7 +312,7 @@ footer p, footer a {
     }
 
     #foot {
-        background-image: url(./images/portal_footer_desktop.png); 
+        background-image: url(./images/portal_footer.png);  
         background-size: contain; 
         background-position: center bottom; 
         max-width: 1100px; 
