@@ -55,6 +55,7 @@ header h2 {
     font-size: 20px; 
     color: rgb(77, 54, 29); 
 
+
     text-align: center; 
 }
 
@@ -105,11 +106,8 @@ footer p, footer a {
         max-width: 1100px; 
         margin: auto; 
         min-height: 100%; 
-
-        
     }
     
-
     #banner {
         background-image: url(./images/portal_banner.png); 
         width: 1100px;
@@ -127,6 +125,34 @@ footer p, footer a {
         position: absolute;
         left: 160px; 
         top: 20px; 
+    }
+
+    img {
+        position: absolute;
+        left: 580px; 
+        top: 22px; 
+        cursor: pointer; 
+
+        animation-name: change; 
+        animation-iteration-count: infinite;
+        animation-duration: 1.3s;
+        animation-direction: alternate;
+
+        transition: 1.8s ease-in-out; 
+    }
+    
+    @keyframes change {
+        from {
+            transform: scale(0.8); 
+        }
+        to {
+            transform: scale(1.2); 
+        }
+    }
+
+    img:hover {
+        rotate: 360deg;
+        translate: 150px;
     }
 
     header h2 {
@@ -165,5 +191,4 @@ footer p, footer a {
     #foot p, #foot a {
         letter-spacing: 1px;
     }
-
 }
