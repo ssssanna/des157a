@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2 - Functions & DOM</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    <style>
+        .bodystyle {
+            font-family: 'Sriracha', cursive;
+            font-size: 50px; 
+            text-align: center;
+            color: rgb(38, 35, 29); 
+        }
+
+        .h2style {
+            font-family: 'Sriracha', cursive;
+            font-size: 50px; 
+            text-align: center;
+            color: rgb(130, 177, 130); 
+        }
+
+        .noh2style {
+            font-family: 'Sriracha', cursive;
+            font-size: 50px; 
+            text-align: center;
+            color: rgb(239, 144, 20); 
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Experiment 2</h1>
+    <h1>What Should I Eat</h1>
+
+    <script>
+        var aNum = prompt("Enter a number between 1 and 6", "");
+
+        var headd = document.getElementsByTagName("h1"); 
+        for (var i=0; i<headd.length; i++) {
+            headd[i].className = "bodystyle"; 
+        } 
+
+        var food = ["Chicken", "Pasta", "Ramen", "Dumplings", "Cookies", "Toast", "Omelette", "Bacon", "Beef", "Salmon"]; 
+
+        function randomOne(min, max) {
+            return (Math.floor((max-min+1)*(Math.random())+min)); 
+        }
+
+        function foodText(something) {
+            var newTag = document.createElement("h2"); 
+            var newText = document.createTextNode(something); 
+
+            newTag.appendChild(newText); 
+            document.querySelector("body").appendChild(newTag); 
+            
+            var newContent = document.querySelector("h2"); 
+            newContent.className = "h2style"; 
+        }
+
+        function invalidText(something1) {
+            var newTag = document.createElement("h2");
+            var newText = document.createTextNode(something1);
+
+            newTag.appendChild(newText);
+            document.querySelector("body").appendChild(newTag);
+
+            var newContent = document.querySelector("h2"); 
+            newContent.className = "noh2style";
+        }
+        
+
+        function pickOne() {
+            if (aNum == "" || aNum == null || isNaN(aNum) || aNum == 0) {
+                invalidText("Uh-oh, invalid input, please try again."); 
+            }
+            else {
+                foodText(food[randomOne(0, food.length-1)]); 
+            }
+        }
+
+        pickOne(); 
+
+    </script>
+</body>
+</html>
