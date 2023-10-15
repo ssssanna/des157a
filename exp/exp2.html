@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
     <style>
-        .bodystyle {
+        .h1style {
             font-family: 'Sriracha', cursive;
-            font-size: 50px; 
+            font-size: 60px; 
             text-align: center;
             color: rgb(38, 35, 29); 
         }
@@ -22,14 +22,27 @@
             font-family: 'Sriracha', cursive;
             font-size: 50px; 
             text-align: center;
-            color: rgb(130, 177, 130); 
+            line-height: 0.8em; 
+            color: rgb(82, 100, 219); 
+
+            transition: 0.4s ease-in-out;
+        }
+
+        .h2style:hover {
+            transform: scale(1.2); 
         }
 
         .noh2style {
             font-family: 'Sriracha', cursive;
             font-size: 50px; 
             text-align: center;
+            line-height: 0.8em;
             color: rgb(239, 144, 20); 
+        }
+
+        body {
+            background: rgb(201,224,168);
+            background: linear-gradient(90deg, rgba(201,224,168,1) 0%, rgba(255,201,124,1) 100%);
         }
     </style>
 </head>
@@ -39,33 +52,43 @@
     <h1>What Should I Eat</h1>
 
     <script>
-        var aNum = prompt("Enter a number between 1 and 6", "");
+        // This program utilizes DOM, functions, variables, for loops, arrays and so on to construct a webpage that asks for user input and presents the results on the screen: users are asked to enter a number between 0-6, and the number of food from the array list will show up on the page accordingly. [for example: users enter 2, 2 of the food items from the list will then show up on the screen.]
 
+        // user input
+        var aNum = prompt("Enter a number between 0 and 6", "");
+
+        // add styles to <h1>
         var headd = document.getElementsByTagName("h1"); 
         for (var i=0; i<headd.length; i++) {
-            headd[i].className = "bodystyle"; 
+            headd[i].className = "h1style"; 
         } 
 
+        // food array list 
         var food = ["Chicken", "Pasta", "Ramen", "Dumplings", "Cookies", "Toast", "Omelette", "Bacon", "Beef", "Salmon"]; 
 
+        // Random function
         function randomOne(min, max) {
             return (Math.floor((max-min+1)*(Math.random())+min)); 
         }
 
+        // function that adds text on the screen -- name of the food 
         function foodText(something) {
             var newTag = document.createElement("h2"); 
             var newText = document.createTextNode(something); 
 
             newTag.appendChild(newText); 
             document.querySelector("body").appendChild(newTag); 
-            
-            var newContent = document.querySelector("h2"); 
-            newContent.className = "h2style"; 
+                    
+            var newContent = document.getElementsByTagName("h2"); 
+            for (var t=0; t<newContent.length; t++) {
+                newContent[t].className = "h2style"; 
+            }
         }
 
-        function invalidText(something1) {
+        // function that adds text on the screen -- invalid input
+        function invalidText(sometext) {
             var newTag = document.createElement("h2");
-            var newText = document.createTextNode(something1);
+            var newText = document.createTextNode(sometext);
 
             newTag.appendChild(newText);
             document.querySelector("body").appendChild(newTag);
@@ -73,18 +96,24 @@
             var newContent = document.querySelector("h2"); 
             newContent.className = "noh2style";
         }
-        
 
-        function pickOne() {
-            if (aNum == "" || aNum == null || isNaN(aNum) || aNum == 0) {
+        // functions that runs the functions above and presents the final result
+        // isNaN -- not a number 
+        function pickOne(someNum) {
+            if (someNum == "" || someNum == null || isNaN(someNum)) {
                 invalidText("Uh-oh, invalid input, please try again."); 
             }
+            else if (someNum == 0) {
+                invalidText("No food is available."); 
+            }
             else {
-                foodText(food[randomOne(0, food.length-1)]); 
+                for (var j=0; j<someNum; j++)  {
+                    foodText(food[randomOne(0, food.length-1)]); 
+                }
             }
         }
 
-        pickOne(); 
+        pickOne(aNum); 
 
     </script>
 </body>
