@@ -3,10 +3,6 @@ h1, h2, h3, p, a {
     padding: 0; 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-image: url(./images/lj_background.png); 
     background-size: cover;
@@ -17,7 +13,7 @@ body {
 
 header h1 {
     font-family: 'DM Serif Display', serif;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     color: rgb(37, 46, 71); 
     letter-spacing: 3px;
@@ -83,7 +79,7 @@ article a {
 }
 
 a:hover {
-    color:rgb(111, 148, 176); 
+    color:rgb(111, 148, 176);
 }
 
 footer {
