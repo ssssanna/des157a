@@ -1,0 +1,106 @@
+h1, h2, h3, p, a {
+    margin: 0; 
+    padding: 0; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(./images/lj_background.png); 
+    background-size: cover;
+
+    max-width: 1000px; 
+    margin: auto; 
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(37, 46, 71); 
+    letter-spacing: 3px;
+
+    margin-top: 1.1em; 
+}
+
+header p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(30, 43, 57); 
+    letter-spacing: 2px;
+
+    padding-top: 20px; 
+}
+
+main {
+    margin-top: 80px; 
+}
+
+main article {
+    background-image: url(./images/lj_article.png);
+    background-size: cover; 
+    box-shadow: 11px 10px 28px -6px rgba(210,217,219,1);
+    border-radius: 2.5em;
+    padding: 3em 4em 3em 4em; 
+
+    max-width: 750px; 
+    margin: auto;
+}
+
+.articleh2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+    color: rgb(77, 96, 117); 
+}
+
+.articledate {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(113, 115, 118); 
+
+    padding-top: 0;
+}
+
+main article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 2.2em; 
+    color: rgb(6, 25, 40); 
+    letter-spacing: 0.6px;
+
+    padding-top: 20px; 
+}
+
+article a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(33, 89, 131); 
+}
+
+a:hover {
+    color:rgb(111, 148, 176); 
+}
+
+footer {
+    margin: 3em 0 1em 0; 
+}
+
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px; 
+    color: rgb(6, 25, 40); 
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none; 
+    color: rgb(6, 25, 40); 
+}
