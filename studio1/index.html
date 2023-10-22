@@ -8,6 +8,10 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam&display=swap" rel="stylesheet">
+
     <link href="./styles.css" rel="stylesheet">
 
     <script src="./script.js" defer></script>
@@ -29,53 +33,61 @@
     </header>
 
     <main>
-        <h1>If you were a producer...</h1>
+        <div id="block">
+            <form>
+                <fieldset>
+                    <legend>Pick a genre</legend>
+                    <input type="radio" id="real" value="Reality Show">
+                    <label for="real">Reality Show</label>
 
-        <form>
-            <fieldset>
-                <legend>Pick a genre</legend>
-                <input type="radio" id="real" value="Reality Show">
-                <label for="real">Reality Show</label>
+                    <input type="radio" id="horror" value="Horror">
+                    <label for="horror">Horror</label>
 
-                <input type="radio" id="horror" value="Horror">
-                <label for="horror">Horror</label>
+                    <input type="radio" id="scifi" value="Science Fiction">
+                    <label for="scifi">Science Fiction</label>
+                </fieldset>
 
-                <input type="radio" id="scifi" value="Science Fiction">
-                <label for="scifi">Science Fiction</label>
-            </fieldset>
+                <label for="name">A name for your film/show</label>
+                <input type="text" id="name" required>
 
-            <label for="name">A name for your film/show</label>
-            <input type="text" id="name" required>
+                <label for="age">A number</label>
+                <input type="number" id="age" required>
 
-            <label for="age">A number</label>
-            <input type="number" id="age" required>
+                <label for="animal">An animal</label>
+                <input type="text" id="animal" required>
 
-            <label for="animal">An animal</label>
-            <input type="text" id="animal" required>
+                <label for="location">A location</label>
+                <input type="text" id="location" placeholder="can be fictional" required>
 
-            <label for="location">A location</label>
-            <input type="text" id="location" placeholder="can be fictional" required>
+                <label for="adj">An adjective</label>
+                <input type="text" id="adj" placeholder="e.g. adventurous" required>
+            </form>
 
-            <label for="adj">An adjective</label>
-            <input type="text" id="adj" placeholder="adventurous" required>
-        </form>
+            <div id="submit">
+                <h1>If you were a producer...</h1>
+
+                <form>
+                    <input type="submit" id="send" value="Create your own Tenflix show!">
+                </form>
+            </div>
+        </div>
 
         <p>Recently Added</p>
         <div class="films">
-            <img src="./images/poster_1.png" alt="Movie Poster--To: Monica" width="350" height="200">
-            <img src="./images/poster_9.png" alt="Movie Poster--You" width="350" height="200">
-            <img src="./images/poster_3.png" alt="Movie Poster--The Money Deal" width="350" height="200">
-            <img src="./images/poster_7.png" alt="Movie Poster--Scar Of Sky" width="350" height="200">
             <img src="./images/poster_5.png" alt="Movie Poster--
-            風が吹くのを待ちます" width="350" height="200">
-            <img src="./images/poster_6.png" alt="Movie Poster--The Crown" width="350" height="200">
-            <img src="./images/poster_10.png" alt="Movie Poster--The Turners" width="350" height="200">
+            風が吹くのを待ちます" width="330" height="180">
+            <img src="./images/poster_9.png" alt="Movie Poster--You" width="330" height="180">
+            <img src="./images/poster_10.png" alt="Movie Poster--The Turners" width="330" height="180">
+            <img src="./images/poster_1.png" alt="Movie Poster--To: Monica" width="330" height="180">
+            <img src="./images/poster_3.png" alt="Movie Poster--The Money Deal" width="330" height="180">
+            <img src="./images/poster_7.png" alt="Movie Poster--Scar Of Sky" width="330" height="180">
+            <img src="./images/poster_6.png" alt="Movie Poster--The Crown" width="330" height="180">
         </div>
     </main>
 
     <footer>
         <p><i>&copy; Anna Zhao 2023</i>  |  <a href="mailto:&#097;&#122;&#122;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>  |  <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
-        <p>Images created by <i>&copy; Midjourney</i></p>
+        <p>Images created by <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F"><i>&copy; Midjourney</i></a></p>
     </footer>
 
 </body>
