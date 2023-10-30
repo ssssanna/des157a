@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
     <link href="./styles.css" rel="stylesheet">
 
@@ -35,34 +35,24 @@
     <main>
         <div id="block">
             <div id="submit">
-                <h1>If <span id="you">you</span> could...</h1>
+                <h1>If <span id="you">You</span> Could...</h1>
 
-                <form>
+                <form id="subform">
                     <input type="submit" id="send" value="Create your own Tenflix show!">
                 </form>
+
+                <h2></h2>
             </div>
 
-            <form>
-                <fieldset>
-                    <legend>Pick a genre</legend>
-                    <input type="radio" id="real" value="Reality Show">
-                    <label for="real">Reality Show</label>
-
-                    <input type="radio" id="horror" value="Horror">
-                    <label for="horror">Horror</label>
-
-                    <input type="radio" id="scifi" value="Science Fiction">
-                    <label for="scifi">Science Fiction</label>
-                </fieldset>
-
+            <form id="mainform">
                 <label for="name">A name for your film/show</label>
                 <input type="text" id="name" required>
 
-                <label for="age">A number</label>
-                <input type="number" id="age" required>
+                <label for="year">A number</label>
+                <input type="number" id="year" required>
 
-                <label for="animal">An animal</label>
-                <input type="text" id="animal" required>
+                <label for="character">A name for charatcer</label>
+                <input type="text" id="character" required>
 
                 <label for="location">A location</label>
                 <input type="text" id="location" placeholder="can be fictional" required>
@@ -74,14 +64,14 @@
 
         <p>Recently Added</p>
         <div class="films">
-            <img src="./images/poster_5.png" alt="Movie Poster--
+            <img src="./images/poster_5.jpg" alt="Movie Poster--
             風が吹くのを待ちます" width="330" height="180">
-            <img src="./images/poster_9.png" alt="Movie Poster--You" width="330" height="180">
-            <img src="./images/poster_10.png" alt="Movie Poster--The Turners" width="330" height="180">
-            <img src="./images/poster_1.png" alt="Movie Poster--To: Monica" width="330" height="180">
-            <img src="./images/poster_3.png" alt="Movie Poster--The Money Deal" width="330" height="180">
-            <img src="./images/poster_7.png" alt="Movie Poster--Scar Of Sky" width="330" height="180">
-            <img src="./images/poster_6.png" alt="Movie Poster--The Crown" width="330" height="180">
+            <img src="./images/poster_9.jpg" alt="Movie Poster--You" width="330" height="180">
+            <img src="./images/poster_10.jpg" alt="Movie Poster--The Turners" width="330" height="180">
+            <img src="./images/poster_1.jpg" alt="Movie Poster--To: Monica" width="330" height="180">
+            <img src="./images/poster_3.jpg" alt="Movie Poster--The Money Deal" width="330" height="180">
+            <img src="./images/poster_7.jpg" alt="Movie Poster--Scar Of Sky" width="330" height="180">
+            <img src="./images/poster_6.jpg" alt="Movie Poster--The Crown" width="330" height="180">
         </div>
     </main>
 
