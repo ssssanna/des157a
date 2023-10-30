@@ -50,18 +50,12 @@
             warning.style.color = "white"; 
             warning.style.width = "330px"; 
             warning.style.height = "600px"; 
-            warning.style.top = "35px";
+            warning.style.top = "28px";
             warning.style.left = "-550px";  
 
             myForm.style.backgroundImage = "url(./images/poster_2.jpg)"; 
 
-            content = `In the year of ${year}, the entirety of humanity has fallen under the control of a type of ${adj} neural technology, encroaching on every individual’s consciousness except ${character}. As the only one in ${location} who still retains their artificial consciousness, ${character} traverses the desolate void of space hoping to find solutions to save humanity. Abyss, betrayals, survival. Where will the destination be?`; 
-
-            show.style.color  
-            // year.style.color = "red";
-            // character.style.color = "red";
-            // location.style.color = "red";
-            // adj.style.color = "red";
+            content = `In the year of <span>${year}</span>, the entirety of humanity has fallen under the control of a type of <span>${adj}</span> neural technology, encroaching on every individual’s consciousness except <span>${character}</span>. As the only one in <span>${location}</span> who still retains their artificial consciousness, ${character} traverses the desolate void of space hoping to find solutions to save humanity. Abyss, betrayals, survival. How will the future of humanity be redefined?`; 
         }
 
         warning.innerHTML = content; 

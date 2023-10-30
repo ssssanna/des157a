@@ -82,11 +82,19 @@ h1 {
 }
 
 #you {
+    font-size: 80px; 
+}
+
+span {
     color: rgb(219, 0, 0); 
+    font-weight: bolder; 
+    font-size: 20px; 
+    font-family: 'Playfair Display', serif;
 }
 
 #block {
     background-image: url(./images/poster_8.jpg); 
+    background-size: cover;
     border-radius: 2.2em; 
     margin-top: 6.5em; 
     margin-bottom: 1.2em; 
