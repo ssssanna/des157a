@@ -1,56 +1,206 @@
-h1, img, a, p, div {
-    padding: 0; 
+h2, img, p {
+    padding: 0;
     margin: 0; 
 }
 
 a {
-    color: rgb(41, 28, 6); 
     text-decoration: none;
+    transition: all 0.4s ease; 
 }
 
 a:hover {
-    color: rgb(137, 136, 132); 
+    color: rgb(160, 160, 159); 
 }
 
 body {
-    background-color: rgb(235, 239, 243); 
-    background-image: url(./images/back.jpg); 
-    background-size: cover;
+    background-color: rgb(17, 8, 3); 
 }
 
-h1 {
-    font-family: 'Give You Glory', cursive;
-    color: rgb(41, 28, 6); 
-    font-size: 40px;
-    margin: 0.6em 0 0 1em; 
+header h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 28px;
+    color: rgb(239, 237, 234); 
+    letter-spacing: 3px;
+    padding: 0.5em 0 0 0em; 
+    text-align: center;
 }
 
-#map {
-    position: relative;
+section article h2 {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 22px;
+    color: rgb(25, 17, 4); 
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 0.6em;
 }
 
-#map img {
+section article p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(25, 17, 4); 
+    text-align: center; 
+    padding: 0.8em 0 0.3em 0; 
+    line-height: 1.5em; 
+}
+
+section article {
+    background-color: rgb(241, 239, 232); 
+    width: 380px;
+    height: 200px; 
+    border-radius: 12px; 
+    border-style: solid;
+    border-color: rgb(112, 87, 196); 
+    border-width: 12px;
+}
+
+section article button {
     display: block; 
     margin: auto; 
-    margin-top: 2em; 
-    border-radius: 1.2em; 
-    box-shadow: 12px 10px 38px -8px rgba(14,9,2,0.61);
-}
-
-#map div {
-    position: absolute;
-    width: 120px;
-    height: 120px; 
-}
-
-
-
-
-
-
-footer {
     font-family: 'Lato', sans-serif;
-    color: rgb(41, 28, 6); 
+    font-size: 16px; 
+    color: white; 
+    text-align: center;
+    background-color: rgb(21, 89, 50); 
+    border-style: none;
+    width: 120px;
+    height: 30px; 
+    border-radius: 12px; 
+    margin-top: 1.6em; 
+    transition: all 0.4s ease-out; 
+}
+
+section article button:hover {
+    background-color: rgb(81, 106, 92); 
+    transform: scale(1.1); 
+}
+
+#rossover, #monicaover, #rachelover, #joeyover, #chandlerover, #phoeberover, #guntherrover {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+
+#legoimage img {
+    display: block;
+    position: absolute;
+    transition: all 1s ease; 
+}
+
+#legoimage {
+    position: relative;
+    width: 1000px;
+    height: 750px; 
+    margin: auto; 
+}
+
+#legoimage div {
+    position: absolute; 
+    width: 70px;
+    height: 105px; 
+}
+
+#Ross, #Monica, #Rachel, #Joey, #Chandler, #Phoebe, #Gunther {
+    cursor: pointer; 
+}
+
+#Ross {
+    left: 482px;
+    top: 279px; 
+}
+
+#Monica {
+    left: 332px;
+    top: 400px; 
+}
+
+#Rachel {
+    left: 395px;
+    top: 226px; 
+}
+
+#Joey {
+    left: 521px;
+    top: 400px; 
+}
+
+#Chandler {
+    left: 291px;
+    top: 493px; 
+}
+
+#Phoebe {
+    left: 676px;
+    top: 299px; 
+}
+
+#Gunther {
+    left: 203px;
+    top: 294px; 
+}
+
+.start {
+    width: 1000px;
+    left: 0; 
+    right: 0; 
+}
+
+.ross {
+    width: 2000px; 
+    left: -482px;
+    top: -279px; 
+}
+
+.monica {
+    width: 2000px; 
+    left: -332px;
+    top: -400px; 
+}
+
+.rachel {
+    width: 2000px; 
+    left: -395px;
+    top: -226px; 
+}
+
+.joey {
+    width: 2000px; 
+    left: -521px;
+    top: -400px; 
+}
+
+.chandler {
+    width: 2000px; 
+    left: -291px;
+    top: -493px; 
+}
+
+.phoebe {
+    width : 2000px; 
+    left: -676px;
+    top: -299px; 
+}
+
+.gunther {
+    width : 2000px; 
+    left: -203px;
+    top: -294px; 
+}
+
+.hide {
+    visibility: hidden; 
+    opacity: 0; 
+}
+
+.show {
+    visibility: visible;
+    opacity: 1; 
+}
+
+footer p, footer a {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: rgb(239, 237, 234); 
     text-align: center; 
-    margin-top: 3em; 
 }
