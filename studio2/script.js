@@ -7,9 +7,10 @@
     const theImg = document.querySelector('img'); 
     const hotspot = document.querySelectorAll('#legoimage div');
 
+    //variable for all overlays
     const overlays = document.querySelectorAll('section article'); 
 
-    // varible for button 
+    // varible for the 'close' button 
     const close = document.querySelectorAll('button'); 
 
     //variables for each overlay

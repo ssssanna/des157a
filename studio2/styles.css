@@ -76,11 +76,44 @@ section article button:hover {
 
 #rossover, #monicaover, #rachelover, #joeyover, #chandlerover, #phoeberover, #guntherrover {
     position: absolute;
-    left: 50%;
-    top: 50%; 
-    transform: translate(-50%, -50%); 
     z-index: 1; 
 }
+
+#rossover {
+    left: 45%;
+    top: 12%; 
+}
+
+#monicaover {
+    left: 30%;
+    top: 28%; 
+}
+
+#rachelover {
+    left: 52%;
+    top: 20%; 
+}
+
+#joeyover {
+    left: 62%;
+    top: 65%; 
+}
+
+#chandlerover {
+    left: 15%;
+    top: 45%; 
+}
+
+#phoeberover {
+    left: 70%;
+    top: 60%; 
+}
+
+#guntherrover {
+    left: 10%;
+    top: 15%; 
+}
+
 
 #legoimage img {
     display: block;
@@ -203,4 +236,5 @@ footer p, footer a {
     font-size: 14px;
     color: rgb(239, 237, 234); 
     text-align: center; 
+    margin-bottom: 0.3em; 
 }
