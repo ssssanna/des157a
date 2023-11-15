@@ -22,6 +22,9 @@
     const phoe = document.querySelector('#phoeberover');
     const gunth = document.querySelector('#guntherrover');
 
+    //after 5s, title/instruction fades out
+    setTimeout(function(){document.querySelector('h2').style.color = 'rgb(17, 8, 3)';}, 5000); 
+
     //when a character is clicked, run the funtions to zoom in and show the overlays 
     hotspot.forEach(function(eachSpot){
         eachSpot.addEventListener('click', zoomIn); 

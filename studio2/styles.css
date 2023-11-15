@@ -23,6 +23,12 @@ header h2 {
     letter-spacing: 3px;
     padding: 0.5em 0 0 0em; 
     text-align: center;
+    transition: color 0.6s ease;
+    cursor: pointer; 
+}
+
+header h2:hover {
+    color: rgb(224, 145, 27); 
 }
 
 section article h2 {
@@ -113,7 +119,6 @@ section article button:hover {
     left: 10%;
     top: 15%; 
 }
-
 
 #legoimage img {
     display: block;
