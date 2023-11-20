@@ -1,0 +1,67 @@
+body {
+    background-image: url(./images/back.png);
+    background-size: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s ease; 
+}
+
+a:hover {
+    color: rgb(52, 41, 21); 
+}
+
+h1 {
+    font-family: 'Joti One', serif;
+    font-size: 36px;
+    color: rgb(13, 28, 65);
+    text-align: center; 
+    padding: 10px; 
+    line-height: 0.6em; 
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; 
+    color: rgb(13, 28, 65); 
+    width: 180px; 
+    height: 45px;
+    background-color: rgb(251, 251, 244); 
+    border-style: none;
+    border-radius: 5px 24px 5px 5px;
+    text-align: center; 
+    display: block; 
+    margin: auto; 
+}
+
+button:hover {
+    
+}
+
+#overlay-welcome {
+    display: border-box; 
+    background-color: white;
+    width: 600px; 
+    height: 155px; 
+    border-radius: 50px; 
+    margin: auto; 
+    border-style: solid;
+    border-width: 30px; 
+    border-color: rgb(97, 123, 237);  
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative; 
+    top: 566px; 
+}
+
+footer a, footer p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; 
+    color: rgb(23, 14, 4); 
+    font-size: 14px;
+    line-height: 0.6em; 
+}
