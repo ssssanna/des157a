@@ -35,9 +35,9 @@ button {
     margin: auto; 
 }
 
-button:hover {
-    
-}
+/* button:hover {
+
+} */
 
 #overlay-welcome {
     display: border-box; 
