@@ -32,7 +32,7 @@ h1 {
     box-shadow: 0px 0px 19px 8px rgba(227,227,227,0.8);
     padding: 130px; 
     border-radius: 0.6em; 
-    margin: 20px 0 30px 0; 
+    margin: 20px 0 50px 0; 
     background-image: url(./images/pb_h1_back.jpg);
 }
 
@@ -47,7 +47,7 @@ article p {
     font-family: 'Lato', sans-serif;
     line-height: 2.2em; 
     color: rgb(3, 12, 31); 
-    padding-bottom: 30px; 
+    padding-bottom: 50px; 
 }
 
 #uiuxp {
