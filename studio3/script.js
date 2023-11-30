@@ -66,6 +66,7 @@
         }); 
     }
 
+    // get dice images + check if 1 is rolled + check scores 
     function throwDice(){
         action.innerHTML = ''; 
         gameData.roll1 = Math.floor(Math.random()*6)+1; 
