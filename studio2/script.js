@@ -51,7 +51,7 @@
             case 'Joey': theImg.className = 'joey'; break;
             case 'Chandler': theImg.className = 'chandler'; break;
             case 'Phoebe': theImg.className = 'phoebe'; break;
-            case 'Gunther': theImg.className = 'gunther'; break;
+            case 'Gunther': theImg.className = 'gunther';
         }
     }; 
 
@@ -65,7 +65,7 @@
             case 'Joey': joe.className = 'show'; break; 
             case 'Chandler': chan.className = 'show'; break; 
             case 'Phoebe': phoe.className = 'show'; break; 
-            case 'Gunther': gunth.className = 'show'; break; 
+            case 'Gunther': gunth.className = 'show';
         }
     }
 })(); 

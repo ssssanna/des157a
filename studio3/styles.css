@@ -1,6 +1,65 @@
+h1, h2, a, p, button, div {
+    padding: 0; 
+    margin: 0; 
+}
+
 body {
     background-image: url(./images/back.png);
     background-size: auto;
+}
+
+#game img {
+    width: 70px;
+    height: 70px; 
+    z-index: 1; 
+    padding: 10px; 
+
+    transform: translate(625px, -75px); 
+}
+
+#player1 {
+    width: 350px;
+    position: absolute;
+    left: 1000px;
+    top: 470px; 
+
+    animation-name: playermove;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+#player2 {
+    width: 350px; 
+    position: absolute;
+    left: 70px;
+    top: 470px; 
+
+    animation-name: playermove;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
+@keyframes playermove {
+    0% {
+        transform: translateY(6px); 
+    }
+    15% {
+        transform: translateY(-6px);
+    }
+    30% {
+        transform: translateY(6px);
+    }
+    45% {
+        transform: translateY(-6px);
+    }
+    60% {
+        transform: translateY(6px);
+    }
+    75% {
+        transform: translateY(-6px);
+    }
 }
 
 a {
@@ -8,8 +67,16 @@ a {
     transition: color 0.2s ease; 
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 a:hover {
     color: rgb(156, 97, 25); 
+}
+
+#hello {
+    position: relative; 
 }
 
 h1 {
@@ -17,8 +84,61 @@ h1 {
     font-size: 36px;
     color: rgb(13, 28, 65);
     text-align: center; 
+    padding: 30px; 
+    line-height: 0.8em; 
+}
+
+h2 {
+    font-family: 'Joti One', serif;
+    font-size: 25px;
+    color: rgb(13, 28, 65);
+    text-align: center; 
     padding: 20px; 
     line-height: 0.8em; 
+}
+
+h3 {
+    font-family: 'Joti One', serif;
+    font-size: 20px;
+    color: rgb(11, 37, 101);
+    text-align: center; 
+    padding: 15px; 
+    line-height: 0.8em; 
+
+    background-color: rgb(235, 235, 235, 0.75); 
+    box-shadow: 0px 0px 19px 8px rgba(182, 184, 184, 0.218);
+    border-radius: 20px; 
+}
+
+#gameh3 {
+    position: absolute; 
+    left: 37%; 
+    top: 8%;
+}
+
+#sorryh3 {
+    position: absolute; 
+    left: 27%; 
+    top: 8%; 
+}
+
+#scoreh3 {
+    font-size: 25px;
+    color: rgb(12, 74, 52);
+    line-height: 1em; 
+
+    position: absolute;
+    left: 9%; 
+    top: 85%; 
+}
+
+#winh3 {
+    font-size: 30px;
+    line-height: 1em; 
+
+    position: absolute;
+    left: 25%; 
+    top: 8%; 
 }
 
 button {
@@ -35,6 +155,7 @@ button {
     text-align: center; 
     display: block; 
     margin: auto; 
+    margin-top: 15px; 
 
     transition: all 0.3s ease-out; 
 }
@@ -44,21 +165,128 @@ button:hover {
 }
 
 #overlay-welcome {
-    display: border-box; 
-    background-color: white;
+    background-color: rgb(235, 235, 235, 0.75); 
+    box-shadow: 0px 0px 19px 8px rgba(182, 184, 184, 0.218);
     width: 600px; 
-    height: 185px; 
+    height: 175px; 
     border-radius: 50px; 
     margin: auto;
-    margin-top: 160px; 
-    border-style: solid;
-    border-width: 25px; 
-    border-color: rgb(97, 123, 237);  
+    margin-top: 170px; 
+}
+
+#overlay-instruction {
+    background-color: rgb(235, 235, 235, 0.75); 
+    box-shadow: 0px 0px 19px 8px rgba(182, 184, 184, 0.218);
+    width: 600px; 
+    border-radius: 50px; 
+    margin: auto;
+    
+    position: absolute; 
+    left: 29.2%; 
+    top: 0; 
+}
+
+#overlay-instruction p {
+    font-weight: 400; 
+    line-height: 2em; 
+    padding: 0 32px 15px 32px;
+    letter-spacing: 0.3px;
+}
+
+.insnum {
+    color: rgb(240, 135, 15); 
+    font-weight: bold; 
+}
+
+.insnum2 {
+    color: rgb(206, 37, 152); 
+    font-weight: bold; 
+}
+
+#insbuttons {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px; 
+}
+
+#quitgame {
+    border-style: none;
+}
+
+#quitgame:hover {
+    background-color: rgb(122, 116, 129); 
+}
+
+#control {
+    width: 600px; 
+    margin: auto;
+    margin-top: 10px; 
+    
+    position: absolute; 
+    left: 29.2%; 
+    top: 0; 
+
+    display: flex; 
+    justify-content: space-around;
+}
+
+#quitgameagain {
+    background: none; 
+    border-style: none; 
+    margin-top: 6.2px; 
+}
+
+#quitgameagain:hover {
+    color: rgb(61, 61, 65); 
+}
+
+#roll {
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgba(237, 148, 24); 
+
+    position: absolute;
+    left: 43%; 
+    top: 21%; 
+
+    transition: all 0.2s ease; 
+}
+
+#rollagain {
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgba(237, 148, 24); 
+
+    position: absolute;
+    left: 35%; 
+    top: 21%; 
+
+    transition: all 0.2s ease; 
+}
+
+#pass {
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgba(237, 148, 24); 
+
+    position: absolute;
+    left: 53%; 
+    top: 21%; 
+
+    transition: all 0.2s ease; 
+}
+
+#roll:hover, #rollagain:hover, #pass:hover {
+    transform: scale(1.1); 
 }
 
 footer {
     display: flex;
-    justify-content: space-around;
+    gap: 30px; 
+
+    position: absolute;
+    left: 30%; 
+    top: 97%;
 }
 
 footer a, footer p {
@@ -67,4 +295,14 @@ footer a, footer p {
     color: rgb(23, 14, 4); 
     font-size: 14px;
     line-height: 0.6em; 
+}
+
+.show {
+    visibility: visible;
+    opacity: 1; 
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0; 
 }

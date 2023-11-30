@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 272">
+  <g id="Layer_5" data-name="Layer 5">
+    <g>
+      <rect width="272" height="272" rx="36" ry="36" style="fill: #5187d6;"/>
+      <circle cx="65.5" cy="62.5" r="24.5" style="fill: #030a11;"/>
+      <circle cx="210.5" cy="62.5" r="24.5" style="fill: #030a11;"/>
+      <circle cx="210.5" cy="211.5" r="24.5" style="fill: #030a11;"/>
+      <circle cx="65.5" cy="211.5" r="24.5" style="fill: #030a11;"/>
+      <circle cx="136.5" cy="135.5" r="24.5" style="fill: #030a11;"/>
+    </g>
+  </g>
+</svg>

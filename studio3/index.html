@@ -19,25 +19,37 @@
 
 <body>
     <main>
-        <div id="overlay-welcome">
-            <h1>Welcome to the Game of Pig</h1>
-            <button>Click to continue</button>
+        <div id="hello">
+            <div id="overlay-welcome" class="show">
+                <h1>Welcome to the Game of Pig</h1>
+                <button id="welcomeclick">Click to continue</button>
+            </div>
+            <div id="overlay-instruction" class="hide">
+                <h1>How to play</h1>
+                <p>There are <span class="insnum">two</span> players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "<span class="insnum">one</span>". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "<span class="insnum">one</span>" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get <span class="insnum">30</span> points or higher wins.</p>
+                <p>Oh, and if you roll <span class="insnum">two</span> "ones" (snake eyes), your current score gets zeroed out. So don’t do that. Good luck.</p>
+                <div id="insbuttons">
+                    <button id="quitgame">Quit</button>
+                    <button id="startgame">Start the game</button>
+                </div>
+            </div>
         </div>
-        <div id="overlay-instruction">
-            <h1>How to play</h1>
-            <p></p>
-        </div>
-        <div>
-            
-        </div>
-        <div>
-            <!-- dice -->
-        </div>
+
+        <div id="control"></div>
+
+        <!-- player illustrations -->
+        <img src="./images/player2.png" alt="Luke the penguin" id="player2">
+        <img src="./images/player1.png" alt="Bob the monster" id="player1">
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
     </main>
 
     <footer>
         <p><i>&copy; Anna Zhao 2023</i>  |  <a href="mailto:&#097;&#122;&#122;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>  |  <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
-        <p>*Background image created by <a href="https://www.midjourney.com/home?callbackUrl=%2Fexplore"><b><i>Midjourney</i></b></a></p>
+        <p>*Images created by <a href="https://www.midjourney.com/home?callbackUrl=%2Fexplore"><b><i>Midjourney</i></b></a></p>
+        <p><a href="./sources.html">sound sources</a></p>
     </footer>
 </body>
 </html>
