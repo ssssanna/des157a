@@ -1,4 +1,4 @@
-h1, h3, article, p, a {
+h1, h3, article, p, a, img {
     margin: 0; 
     padding: 0; 
 }
@@ -21,12 +21,28 @@ a:hover {
     color: rgb(78, 92, 122); 
 }
 
-h1 {
+#briefh1 {
     font-family: 'DM Serif Display', serif;
     font-size: 45px;
     color: rgb(6, 35, 61); 
     letter-spacing: 0.5px;
     text-align: center;
+
+    background-color: rgb(235, 235, 235, 0.5); 
+    box-shadow: 0px 0px 19px 8px rgba(227,227,227,0.8);
+    padding: 130px; 
+    border-radius: 0.6em; 
+    margin: 20px 0 50px 0; 
+    background-image: url(./images/pb_h1_back.jpg);
+}
+
+#processh1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 45px;
+    color: rgb(6, 35, 61); 
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.2em; 
 
     background-color: rgb(235, 235, 235, 0.5); 
     box-shadow: 0px 0px 19px 8px rgba(227,227,227,0.8);
@@ -52,6 +68,18 @@ article p {
 
 .pd {
     padding-bottom: 20px; 
+}
+
+#comps {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 30px; 
+}
+
+img {
+    display: block;
+    margin: auto; 
+    margin-bottom: 80px; 
 }
 
 footer p {
