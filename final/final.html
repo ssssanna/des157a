@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+    <link href="./finalstyles.css" rel="stylesheet">
+
+    <!-- <script src="./script.js" defer></script> -->
+</head>
+
+<body>
+    <header>
+        <h1>Brick. Idea. Story.</h1>
+    </header>
+
+    <main>
+        <div class="redbox">
+            <h2>1070 pieces</h2>
+            <div id="cpbox">
+                <h3>Central Perk</h3>
+                <p>This LEGO set features the Central Perk coffee house in the iconic TV show <i>Friends</i>, which is a popular sitcom that ran for 10 years. The show describes the lives of six young people in New York city, who loved and supported each other along the way.</p>
+            </div>
+        </div>
+
+        <!-- the lego image with divs that contain hotspots for click -->
+        <div id="friendslego">
+            <img src="./images/friends.png" alt="Friends Lego">
+            <div id="Ross"></div>
+            <div id="Monica"></div>
+            <div id="Rachel"></div>
+            <div id="Joey"></div>
+            <div id="Chandler"></div>
+            <div id="Phoebe"></div>
+            <div id="Gunther"></div>
+        </div>
+
+        <!-- overlays -->
+        <section>
+            <article id="rossover" class="show">
+                <div class="overlaycontent"> 
+                    <img src="./images/ross.png" alt="Ross" width="180">
+                    <p>"Hi I'm Ross. My sister is over there on the couch. I have a PhD but nobody calls me a doctro here. You look new, join us on the couch! Oh and another thing: RACHEL AND I WERE ON A BREAK!!!"</p>
+                </div>
+                <button>Close</button>
+            </article>
+    
+            <article id="monicaover" class="hide"> 
+                <img src="./images/monica.png" alt="Monica" width="180">
+                <p>"This table is dirty. Hi I'm Monica, Ross's sister. That chair is dirty too. Did I clean the oven this morning? I should go home and check."</p>
+                <button>Close</button>
+            </article>
+
+            <article id="rachelover" class="hide"> 
+                <img src="./images/rachel.png" alt="Rachel" width="180">
+                <p>"Hi there my name is Rachel. I live with Monica and I used to date Ross. We weren't on a break but he doesn't admit it. It doesn't matter. I'm working to save up for a trip to Italy. I'll give you a free cookie cuz you seem nice. Don't tell Gunther tho."</p>
+                <button>Close</button>
+            </article>
+
+            <article id="joeyover" class="hide"> 
+                <img src="./images/joey.png" alt="Joey" width="180">
+                <p>"Hello Hello look who's here. Hi I'm Joey, how you doin'.I tell you a secret but don't tell anyone. I ate all of the pizza in Monica's fridge but she doesn't know. I also took her orange juice. Hehe."</p>
+                <button>Close</button>
+            </article>
+
+            <article id="chandlerover" class="hide"> 
+                <img src="./images/chandler.png" alt="Chandler" width="180">
+                <p>"Think of a joke, think of a joke, think of a joke... Hi I'm Chandler. I work with data and statistics. Joey and I are roommates. [awlward silence]. Let me get something for you, coffee? tea? spring water?"</p>
+                <button>Close</button>
+            </article>
+
+            <article id="phoeberover" class="hide">
+                <img src="./images/phoebe.png" alt="Phoebe" width="180"> 
+                <p>"What song should I sing? <i>Sticky Shoes</i> or <i>Crusty Old Man</i>? Oh look someone is over there talking to Ross. Strange. Someone gave me 1000 dollars this morning ugh. Now I have to go to the police station again."</p>
+                <button>Close</button>
+            </article>
+
+            <article id="guntherrover" class="hide"> 
+                <img src="./images/gunther.png" alt="Gunther" width="180">
+                <p>"Hi I’m <span class="name">Gunther</span>. I work at the coffee house and I get to work with Rachel Green!! I love her. Who doesn’t love Rachel. I wish I could marry her. Anyways, nice to see you here, can I get something for you?"</p>
+                <button>Close</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><i>&copy; Anna Zhao 2023</i>  |  <a href="mailto:&#097;&#122;&#122;&#122;&#104;&#097;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>  |  <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+    </footer>
+</body>
+</html>

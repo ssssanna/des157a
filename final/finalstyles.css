@@ -1,0 +1,156 @@
+h1, h2, h3, a, p, img {
+    padding: 0; 
+    margin: 0; 
+}
+
+body {
+    background-color: #141312; 
+}
+
+h1 {
+    font-family: 'Fugaz One', sans-serif;
+    font-size: 50px; 
+    color: #FEFEFE; 
+    width: 100%; 
+    height: 10em;
+    margin-top: 7.5em; 
+    padding-left: 110px;
+}
+
+.redbox {
+    background-color: #DA291C; 
+    width: 100%; 
+    height: 21em; 
+    position: relative; 
+}
+
+.redbox h2 {
+    font-family: 'Fugaz One', sans-serif;
+    color: rgb(20, 19, 18, 8%); 
+    font-size: 250px; 
+    text-align: center; 
+    margin: auto; 
+    padding-top: 20px; 
+    z-index: auto; 
+}
+
+.redbox h3 {
+    font-family: 'Fugaz One', sans-serif;
+    color: #FEFEFE; 
+    font-size: 50px; 
+    position: absolute;
+    left: 110px; 
+    top: 135px; 
+}
+
+.redbox p {
+    font-family: 'Lora', serif;
+    font-weight: 400; 
+    font-size: 16px; 
+    color: #141312; 
+    width: 500px; 
+    line-height: 1.8em; 
+    letter-spacing: 0.3px;
+    position: absolute;
+    right: 130px;
+    top: 110px; 
+}
+
+#cpbox {
+    display: flex;
+    justify-content: space-around; 
+}
+
+#friendslego {
+    position: relative; 
+}
+
+#friendslego img {
+    width: 980px;
+    padding-left: 40px; 
+    margin-top: 150px; 
+}
+
+#friendslego div {
+    position: absolute;
+    width: 70px;
+    height: 100px; 
+}
+
+#Ross {
+    left: 550px; 
+    top: 490px; 
+}
+
+#Monica {
+    left: 339px; 
+    top: 518px; 
+}
+
+#Rachel {
+    left: 500px; 
+    top: 445px; 
+}
+
+#Joey {
+    left: 525px; 
+    top: 560px; 
+}
+
+#Chandler {
+    left: 250px; 
+    top: 558px; 
+}
+
+#Chandler {
+    left: 250px; 
+    top: 558px; 
+}
+
+#Phoebe {
+    left: 736px; 
+    top: 530px; 
+}
+
+#Gunther {
+    left: 305px; 
+    top: 448px; 
+}
+
+section article {
+    background-color: #FEFEFE; 
+    width: 450px;
+    height: 350px; 
+    border-radius: 45px 0 0 45px; 
+    position: relative; 
+}
+
+section article img {
+    position: absolute;
+    top: 50px; 
+}
+
+section article p {
+    font-family: 'Lora', serif;
+    font-weight: 400; 
+    font-size: 16px;
+    color: #141312; 
+    line-height: 1.8em; 
+    letter-spacing: 0.3px; 
+    width: 250px; 
+
+    position: absolute;
+    left: 160px;
+    top: 80px; 
+}
+
+.show {
+    visibility: visible;
+    opacity: 1; 
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0; 
+}
+
