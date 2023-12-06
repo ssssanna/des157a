@@ -3,7 +3,7 @@
     console.log('reading js'); 
 
     //assigning variables and getting all the elements needed for script
-    // variables for hotspots
+    //variables for hotspots
     const friendshotspot = document.querySelectorAll('#friendslego div');
 
     //variable for overlays

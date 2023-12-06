@@ -12,12 +12,12 @@ button:hover {
 }
 
 body {
-    background-color: #141312; 
+    background-color: #141312;
     width: 1360px; 
     display: block; 
     margin: auto; 
     height: 100%;
-    position: relative;  
+    position: relative; 
 }
 
 footer {
