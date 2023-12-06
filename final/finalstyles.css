@@ -1,36 +1,79 @@
-h1, h2, h3, a, p, img {
+h1, h2, h3, a, p, img, div {
     padding: 0; 
     margin: 0; 
 }
 
+button {
+    z-index: 1; 
+}
+
+button:hover {
+    cursor: pointer; 
+}
+
 body {
     background-color: #141312; 
+    width: 1360px; 
+    display: block; 
+    margin: auto; 
+    height: 100%;
+    position: relative;  
+}
+
+footer {
+    background-color: #DA291C; 
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: #FEFEFE; 
+    text-align: center;
+    padding: 50px; 
+    position: absolute;
+    bottom: -2400px;
+    width: 1260px; 
+}
+
+footer a {
+    color: #FEFEFE; 
+    text-decoration: none;
+    transition: color 0.2s ease; 
+}
+
+footer a:hover {
+    color: rgb(66, 62, 62); 
+}
+
+header {
+    height: 30em;
 }
 
 h1 {
     font-family: 'Fugaz One', sans-serif;
     font-size: 50px; 
     color: #FEFEFE; 
-    width: 100%; 
-    height: 10em;
     margin-top: 7.5em; 
     padding-left: 110px;
 }
 
+header p {
+    font-family: 'Lora', serif;
+    color: #FEFEFE; 
+    padding-left: 110px; 
+    padding-top: 20px; 
+}
+
 .redbox {
     background-color: #DA291C; 
-    width: 100%; 
-    height: 21em; 
+    height: 20em; 
     position: relative; 
 }
 
 .redbox h2 {
     font-family: 'Fugaz One', sans-serif;
     color: rgb(20, 19, 18, 8%); 
-    font-size: 250px; 
+    font-size: 230px; 
     text-align: center; 
     margin: auto; 
-    padding-top: 20px; 
+    padding-top: 30px; 
     z-index: auto; 
 }
 
@@ -40,25 +83,27 @@ h1 {
     font-size: 50px; 
     position: absolute;
     left: 110px; 
-    top: 135px; 
+    top: 130px; 
 }
 
 .redbox p {
     font-family: 'Lora', serif;
     font-weight: 400; 
-    font-size: 16px; 
     color: #141312; 
     width: 500px; 
     line-height: 1.8em; 
     letter-spacing: 0.3px;
     position: absolute;
     right: 130px;
-    top: 110px; 
+    top: 102px; 
 }
 
-#cpbox {
-    display: flex;
-    justify-content: space-around; 
+#clickon {
+    font-family: 'Lora', serif;
+    color: #FEFEFE; 
+    position: absolute;
+    right: 80px; 
+    margin-top: 140px; 
 }
 
 #friendslego {
@@ -67,7 +112,6 @@ h1 {
 
 #friendslego img {
     width: 980px;
-    padding-left: 40px; 
     margin-top: 150px; 
 }
 
@@ -75,54 +119,57 @@ h1 {
     position: absolute;
     width: 70px;
     height: 100px; 
+    cursor: pointer; 
 }
 
 #Ross {
-    left: 550px; 
+    left: 510px; 
     top: 490px; 
 }
 
 #Monica {
-    left: 339px; 
+    left: 299px; 
     top: 518px; 
 }
 
 #Rachel {
-    left: 500px; 
+    left: 460px; 
     top: 445px; 
 }
 
 #Joey {
-    left: 525px; 
+    left: 485px; 
     top: 560px; 
 }
 
 #Chandler {
-    left: 250px; 
-    top: 558px; 
-}
-
-#Chandler {
-    left: 250px; 
+    left: 210px; 
     top: 558px; 
 }
 
 #Phoebe {
-    left: 736px; 
+    left: 696px; 
     top: 530px; 
 }
 
 #Gunther {
-    left: 305px; 
+    left: 265px; 
     top: 448px; 
 }
 
+/* overlays */
 section article {
     background-color: #FEFEFE; 
-    width: 450px;
+    width: 430px;
     height: 350px; 
     border-radius: 45px 0 0 45px; 
     position: relative; 
+}
+
+#rossover, #monicaover, #rachelover, #joeyover, #chandlerover, #phoebeover, #guntherover {
+    position: absolute; 
+    top: 1150px; 
+    transition: all 0.4s ease-out; 
 }
 
 section article img {
@@ -130,10 +177,28 @@ section article img {
     top: 50px; 
 }
 
+#guntherover img {
+    left: 15px; 
+    top: 82px; 
+}
+
+#monicaover img {
+    top: 20px; 
+}
+
+#phoebeover img {
+    top: -20px; 
+    left: -30px; 
+}
+
+#rachelover img {
+    top: -20px;
+    left: -24px; 
+}
+
 section article p {
     font-family: 'Lora', serif;
     font-weight: 400; 
-    font-size: 16px;
     color: #141312; 
     line-height: 1.8em; 
     letter-spacing: 0.3px; 
@@ -144,13 +209,83 @@ section article p {
     top: 80px; 
 }
 
-.show {
-    visibility: visible;
-    opacity: 1; 
+.closebutton {
+    border-style: none;
+    background-color: #FEFEFE; 
+    font-size: 25px; 
+    color: #141312; 
+    position: absolute;
+    left: 20px;
+    top: 16px; 
 }
 
-.hide {
+#otherimages {
+    position: relative; 
+}
+
+#otherimages p {
+    font-family: 'Lora', serif;
+    color: #FEFEFE; 
+    line-height: 2em; 
+    letter-spacing: 0.3px; 
+}
+
+#friends1 {
+    position: absolute;
+    left: 100px; 
+    top: 280px; 
+}
+
+#friendstext1 {
+    position: absolute;
+    left: 520px; 
+    top: 360px; 
+}
+
+#friends2 {
+    position: absolute;
+    right: 50px; 
+    top: 700px; 
+}
+
+#friendstext2 {
+    position: absolute;
+    left: 50px; 
+    top: 850px; 
+    width: 430px; 
+}
+
+#friends3 {
+    position: absolute;
+    left: 200px; 
+    top: 1450px; 
+}
+
+#friendstext3 {
+    position: absolute;
+    right: 130px; 
+    top: 1650px; 
+    width: 430px; 
+}
+
+/* .show {
+    visibility: visible;
+    opacity: 1; 
+} */
+
+/* .hide {
+    visibility: hidden;
+    opacity: 0; 
+} */
+
+ .show {
+    right: -50px; 
+    visibility: visible;
+    opacity: 1; 
+ }
+
+ .hide {
+    right: 0px; 
     visibility: hidden;
     opacity: 0; 
 }
-
